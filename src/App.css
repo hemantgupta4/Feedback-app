@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+/* App.css */
+/* Add your styles here */
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.star-rating {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.star-rating p {
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.star-rating-section {
+  margin-top: 20px;
 }
+
+.star-rating-input {
+  display: flex;
+}
+
+.star-rating-input label {
+  margin-right: 5px;
+}
+
+.feedback-options {
+  margin-top: 20px;
+}
+
+.options label {
+  display: block;
+}
+
+.feedback-form {
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.submit-button {
+  margin-top: 20px;
+}
+
+
+
+/* Whole window background color */
+body {
+  background-color: #f0f8ff;
+}
+
+/* Header block styles */
+.header {
+  background-color: #b0c4de;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  padding: 1px;
+}
+
+.back-button {
+  margin-right: 10px;
+}
+
+/* ManagerInfo component styles */
+
+.manager-info {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #b9d9eb;
+}
+
+.manager-details {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.manager-image {
+  width:100px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.manager-info-text {
+  color: #333;
+}
+
+.manager-name {
+  margin: 0;
+  margin-right: 60px;
+
+}
+
+.manager-designation {
+  margin: 5px 0;
+  margin-right: 60px;
+}
+
+.manager-quote {
+  margin: 5px 0;
+  margin-right: 60px;
+
+}
+
+.star-rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.reviews {
+  color: #0071c5;
+  margin: 1px;
+}
+
+
+/* StarRating component styles */
+.star-rating-section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.star-rating-input {
+  display: flex;
+}
+
+.star-rating-input label {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.star-icon {
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+.star-icon.selected {
+  color: gold;
+}
+
+/* Emoji image styles */
+.emoji {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  height: 100%;
+}
+
+/* FeedbackOptions component styles */
+.feedback-options {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.option {
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.option:hover {
+  background-color: #5d8aa8;
+  color: #333;
+}
+
+.selected {
+  background-color: #5d8aa8;
+  color: #333;
+}
+
+/* FeedbackForm component styles */
+.feedback-form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  border: 1px solid #a9a9a9;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Submit button styles */
+.submit-button {
+  background-color: #d0d0d0;
+  color: #363636;
+  border: none;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+  flex-grow: 1; 
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  width: calc(100%);
+}
+
+.submit-button:hover {
+  background-color: #7f7f7f;
+}
+
