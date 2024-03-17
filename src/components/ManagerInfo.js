@@ -14,11 +14,13 @@ const ManagerInfo = () => {
           <p className="manager-quote">"I'm happy to work here"</p>
         </div>
         </div>
-      <div className="star-rating">
-        <p className="rating" >4.5</p>
-        <StarIcon style={{ color: '#ffd700', fontSize: '28px',  }} />
-      <p className="reviews" >500 Reviews</p>
-      </div>
+        <div className="star-rating">
+  <div className="rating-container">
+    <p className="rating">4.5</p>
+    <StarIcon className="Star" />
+  </div>
+  <p className="reviews">350 Reviews</p>
+</div>
     </div>
   );
 };
