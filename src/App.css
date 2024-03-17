@@ -73,8 +73,10 @@ body {
 /* ManagerInfo component styles */
 
 .manager-info {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto  1fr auto; 
   align-items: center;
+  gap: 20px; 
   border-radius: 10px;
   padding: 20px;
   background-color: #b9d9eb;
@@ -114,20 +116,37 @@ body {
 
 }
 
-.star-rating {
-  display: flex;
-  align-items: center;
+.rating-container {
+  display: flex; 
+  align-items: center; 
 }
+
+.star-rating {
+  
+    grid-column: 3; 
+    display: grid;
+    grid-template-rows: auto auto; 
+    justify-content: flex-end; 
+  }
+
 
 .rating {
   font-weight: bold;
   font-size: 20px;
   color: #333;
+  margin-right: 10px;
 }
+
+.Star {
+  color: #ffd700; 
+  font-size: 25px;
+  margin-right: 10px;  
+}
+
 
 .reviews {
   color: #0071c5;
-  margin: 1px;
+  margin-top: 5px;
 }
 
 
